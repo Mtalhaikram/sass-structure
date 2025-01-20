@@ -1,0 +1,65 @@
+@use './components/variables.scss' as *;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F2F2;
+    overflow-x: hidden;
+}
+
+
+.v-container{
+    max-width: 1536px !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+   @media screen and (max-width:1500px){
+    width: 100% !important;
+   }
+   @media screen and (min-width:1501px){
+    max-width: 1536px !important;
+   }
+  }
+
+
+  .truncated-heading {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; /* Limit to 1 line */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis at the end */
+    white-space: normal; /* Allows text to wrap */
+  }
+
+  .truncated-heading-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Limit to 1 line */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis at the end */
+    white-space: normal; /* Allows text to wrap */
+  }
+
+  .truncated-heading-3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Limit to 1 line */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis at the end */
+    white-space: normal; /* Allows text to wrap */
+  }
+
+
+  .truncated-heading-4 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* Limit to 1 line */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis at the end */
+    white-space: normal; /* Allows text to wrap */
+  }
+
+
+

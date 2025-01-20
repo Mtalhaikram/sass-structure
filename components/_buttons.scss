@@ -1,0 +1,36 @@
+@use './variables.scss' as *;
+
+.btn{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 8px 24px !important;
+    gap: 8px !important;
+    text-align: center !important;
+    transition: all 0.5s ease !important;
+    cursor: pointer;
+    font-family: $font-family-bold;
+    font-size: 12px !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: normal !important;
+    outline: none !important;
+    height: 44px !important;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+
+    &.btn-primary{
+        background: transparent;
+        color: $primary-color;
+        border: 0.5px solid $primary-color;
+        position: relative;
+        &:hover,&:active{
+            background: $primary-color;
+            border: 1px solid $primary-color;
+            color: $white-color;
+        }
+    }
+
+
+}

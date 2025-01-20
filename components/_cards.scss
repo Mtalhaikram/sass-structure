@@ -1,0 +1,28 @@
+@use './variables.scss' as *;
+
+.v-card{
+    border-radius: 0px !important;
+    height: 100%;
+
+    @include for_breakpoint(sm-mobile) {
+        height: auto;
+    }
+    @include for_breakpoint(lg-mobile) {
+        height: auto;
+    }
+    @include for_breakpoint(md-tablet) {
+        height: auto;
+    }
+}
+
+.card-bg{
+    background: $white-color;
+    color: $primary-color;
+}
+
+.continue-watching-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+}

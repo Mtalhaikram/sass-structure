@@ -1,0 +1,205 @@
+@use './variables.scss' as *;
+
+
+h5{
+    font-family: $font-family-helvetica;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    line-height: 133%;
+    text-transform: uppercase;
+
+    @include for_breakpoint(sm-mobile) {
+        font-size: 14px !important;
+    }
+    @include for_breakpoint(lg-mobile) {
+        font-size: 14px !important;
+    }
+    @include for_breakpoint(tablet) {
+        font-size: 16px !important;
+    }
+    @include for_breakpoint(laptop) {
+        font-size: 19px !important;
+    }
+
+    &.tracking-48{
+        letter-spacing: 4.8px;
+    }
+}
+h6{
+    font-family: $font-family-helvetica;
+    font-weight: 500 !important;
+    font-size: 22px !important;
+    line-height: 127.273%;
+    letter-spacing: 5.5px;
+    text-transform: uppercase;
+
+    @include for_breakpoint(sm-mobile) {
+        font-size: 16px !important;
+        line-height: 150%;
+        letter-spacing: 4px;
+    }
+    @include for_breakpoint(lg-mobile) {
+        font-size: 16px !important;
+        line-height: 150%;
+        letter-spacing: 4px;
+    }
+}
+
+
+p{
+    font-family: $font-family-helvetica;
+    line-height: normal;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+    font-weight: 400;
+    word-break: break-word;
+    text-transform: uppercase;
+
+    &.text-capitalize{
+        text-transform: capitalize;
+    }
+}
+
+
+.fs-16{
+    font-family: $font-family-helvetica;
+    font-size: 16px;
+    font-style: normal;
+    line-height:  150%;
+
+
+
+}
+
+.tracking-16{
+    letter-spacing: 1.6px;
+}
+
+
+.fs-14{
+    font-size: 14px;
+    line-height: 150%;
+    @include for_breakpoint(laptop) {
+        font-size:12px;
+    }
+    @include for_breakpoint(tablet) {
+        font-size:12px;
+    }
+    @include for_breakpoint(lg-mobile) {
+        font-size:12px;
+    }
+    @include for_breakpoint(sm-mobile) {
+        font-size:12px;
+    }
+
+    &.lh-normal{
+        line-height: normal;
+    }
+
+    &.letter-spacing-2px{
+        letter-spacing: 2.8px;
+        @include for_breakpoint(lg-mobile) {
+            letter-spacing: 2.2px;
+        }
+        @include for_breakpoint(sm-mobile) {
+            letter-spacing: 2.2px;
+        }
+    }
+
+    &.tracking-4px{
+        letter-spacing: 4.2px;
+    }
+    &.tracking-14{
+        letter-spacing: 1.4px;
+    }
+}
+.fs-12{
+    font-size: 12px;
+    line-height: normal;
+
+    @include for_breakpoint(lg-mobile) {
+        font-size:11px;
+    }
+    @include for_breakpoint(sm-mobile) {
+        font-size:11px;
+    }
+
+    &.letter-spacing-2px{
+        letter-spacing: 2px;
+    }
+
+}
+.fs-11{
+    font-size: 11px;
+    font-style: normal;
+    line-height: normal;
+
+    @include for_breakpoint(lg-mobile) {
+        font-size:10px;
+    }
+    @include for_breakpoint(sm-mobile) {
+        font-size:10px;
+    }
+
+    &.tracking-33px{
+        letter-spacing: 3.3px;
+    }
+}
+
+.fs-sm-watch{
+    color: #111;
+    text-overflow: ellipsis;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.857%;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+
+    &.fs--12{
+        font-size: 12px;
+    }
+    &.fs--11{
+        font-size: 11px;
+    }
+}
+.fs-sm-time{
+    color: #666;
+    font-family: "Helvetica Neue";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 133.333%;
+    letter-spacing: 2.4px;
+
+    &.fs--11{
+        font-size: 11px;
+    }
+}
+
+.lh-110{
+    line-height: 110%;
+}
+.lh-133{
+    line-height: 133%;
+}
+
+.tracking-24px{
+    letter-spacing: 2.4px;
+}
+
+
+.fw-300{
+    font-weight: 300;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-700{
+    font-weight: 700;
+}
